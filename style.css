@@ -48,7 +48,6 @@
   --unnamed-padding-50: 50px;
   --unnamed-padding-30: 30px;
   --unnamed-padding-28: 28px;
-  --unnamed-padding-28: 10px;
   --unnamed-padding-82: 82px;
   --unnamed-padding-140: 140px;
   --unnamed-padding-14:14px;
@@ -71,8 +70,9 @@
   --unnamed-text-align-right: right;
   --unnamed-border-1-solid: 1px solid;
   --unnamed-position-relative:relative;
-  --unnamed-background-position-x-76:76%;
+  --unnamed-background-position-x-65:65%;
   --unnamed-background-repeat-no-repeat:no-repeat;
+  --unnamed-background-size: cover ;
 }
 
 .headline-—-48pt {
@@ -236,6 +236,10 @@ body {
   display: none;
 }
 
+.text-align-center {
+  text-align: var(--unnamed-text-align-center);
+}
+
 #menuToggle {
   display: block;
   position: relative;
@@ -253,10 +257,6 @@ body {
   color: #232323;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-  color: tomato;
 }
 
 #menuToggle input {
@@ -283,7 +283,7 @@ body {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #354E57;
   border-radius: 3px;
   z-index: 1;
   -webkit-transform-origin: 4px 0px;
@@ -339,7 +339,7 @@ body {
 #menu {
   position: absolute;
   width: 300px;
-  margin: -100px 0 0 -50px;
+  margin: -106px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   background: #ededed;
@@ -415,8 +415,9 @@ body {
   position: var(--unnamed-position-relative);
   background-image: url(assets/hero-banner-background.png);
   background-color: var(--gray-e0e3e8);
-  background-position-x: var(--unnamed-background-position-x-76);
+  background-position-x: var(--unnamed-background-position-x-65);
   background-repeat: var(--unnamed-background-repeat-no-repeat);
+  background-size: var(--unnamed-background-size);
 }
 
 .main_div {
@@ -703,7 +704,6 @@ body {
 .footer_padding {
   padding: 167px 139px;
   background: var(--oxfort-blue-354e57);
-  font-family: var(--unnamed-font-family-proxima-nova);
 }
 
 .footer_list {
@@ -712,6 +712,7 @@ body {
 
 footer {
   color: var(--white-ffffff) !important;
+  font-family: var(--unnamed-font-family-proxima-nova);
 }
 
 footer ul li {
@@ -781,11 +782,15 @@ footer ul li a {
 }
 
 .social-contact-section {
-  padding-top: var(--unnamed-padding-44);
+  padding: var(--unnamed-padding-44);
 }
 
-.footer-padding .social-contact-section .section-heading {
+.section-heading {
   padding-bottom: var(--unnamed-padding-16);
+}
+
+.Footer_pd {
+  padding: 0;
 }
 
 /* Media Query for Mobile Devices */
@@ -808,6 +813,13 @@ footer ul li a {
   .banner {
     padding: var(--unnamed-padding-28);
     background: #e0e4e7;
+    margin-top: -27px;
+    background-size: 150% 60%;
+  }
+  .teaser .product_teaser_img {
+    height: 251px;
+    width: 240px;
+    background-color: white;
   }
   .visibilty_hidden {
     display: none;
@@ -835,8 +847,20 @@ footer ul li a {
   .section_link {
     padding-bottom: var(--unnamed-padding-40);
   }
-  .footer {
-    color: var(--white-ffffff);
+  .mt-60 {
+    margin-top: 60px;
+  }
+  .newsletter_inputbox {
+    height: 30px;
+    width: 180px;
+    border: 1px solid #956a53;
+  }
+  .newsletter_desc {
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  .Footer_pd {
+    padding: 0 38px;
   }
 }
 
@@ -856,6 +880,20 @@ footer ul li a {
   }
   .visible-xs {
     display: block;
+  }
+  .banner {
+    padding: var(--unnamed-padding-28);
+    background: #e0e4e7;
+    margin-top: -27px;
+    background-size: 150% 60%;
+  }
+  .teaser .product_teaser_img {
+    height: 251px;
+    width: 240px;
+    background-color: white;
+  }
+  .mt-60 {
+    margin-top: 60px;
   }
   .teaser_main {
     background: #EEF3F4 0% 0% no-repeat padding-box;
@@ -903,12 +941,31 @@ footer ul li a {
   }
   .newsletter_desc {
     padding-bottom: 32px;
+    text-align: center;
   }
   .social-contact-section {
     padding-top: var(--unnamed-padding-44);
   }
   .section .section-heading {
     padding-bottom: var(--unnamed-padding-16);
+  }
+  .mt20 {
+    margin-bottom: 20px;
+  }
+  .newsletter_inputbox {
+    height: 30px;
+    width: 180px;
+    border: 1px solid #956a53;
+  }
+  .footer_input {
+    background: transparent;
+    border: 1px solid white;
+    height: 40px;
+    color: var(----white-ffffff);
+    width: 144px;
+  }
+  .pd-28 {
+    padding: var(--unnamed-padding-28);
   }
 }
 
