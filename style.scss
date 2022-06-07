@@ -75,6 +75,7 @@
 
     --unnamed-height-436: 436px;
     --unnamed-height-455: 455px;
+    --unnamed-height-40: 40px;
     
     --unnamed-text-align-center: center;
     --unnamed-text-align-left: left;
@@ -232,29 +233,20 @@ body {
     }
 }
 
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
+
  .visible-lg {
-    display:block;
+    display:var(--unnamed-display-block);
 }
 .visible-xs {
-    display:none;
+    display:var(--unnamed-float-none);
 }
 .text-align-center{
     text-align:  var(--unnamed-text-align-center);
 }
  #menuToggle
  {
-   display: block;
-   position: relative;
+   display: var(--unnamed-display-block);;
+   position: var(--unnamed-position-relative);
    top: 25px;
    left: 30px;
    z-index: 1;
@@ -275,7 +267,7 @@ body {
  
  #menuToggle input
  {
-   display: block;
+    display:var(--unnamed-display-block);
    width: 40px;
    height: 32px;
    position: absolute;
@@ -295,19 +287,15 @@ body {
   */
  #menuToggle span
  {
-   display: block;
+   display:var(--unnamed-display-block);
    width: 33px;
    height: 4px;
    margin-bottom: 5px;
-   position: relative;
-   
+   position: var(--unnamed-position-relative);
    background: #354E57;
    border-radius: 3px;
-   
    z-index: 1;
-   
    transform-origin: 4px 0px;
-   
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                opacity 0.55s ease;
@@ -450,14 +438,14 @@ body {
         font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-28)/var(--unnamed-line-spacing-34) var(--unnamed-font-family-proxima-nova);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--oxford-blue-354e57);
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
       
     }
     .secondary_span {
         font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/20px var(--unnamed-font-family-proxima-nova);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--oxford-blue-354e57);
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
         margin-top:10px;
        
     }
@@ -492,7 +480,7 @@ body {
         font: var(--unnamed-font-style-normal) normal medium 12px/15px var(--unnamed-font-family-proxima-nova);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--rangitoto-2e2e22);
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
         padding: 10px;
         width: 100%;
         margin-top: 14px;
@@ -524,8 +512,6 @@ body {
         padding-top: 9px;
     }
     .product_card_margin{
-        // padding: 0 28px;
-        // margin: 30px 0 100px 0;
         margin-top: var(--unnamed-margin-28);
         padding-right: var(--unnamed-padding-10);
         padding-left: var(--unnamed-padding-10);
@@ -563,7 +549,7 @@ body {
  }
  .teaser_btn{
     width: 176px;
-    height: 40px;
+    height: var(--unnamed-height-40);
     margin: 0 368px 215px 139px;
     background: transparent;
     border: 1px solid var(--white-ffffff);
@@ -592,7 +578,7 @@ body {
 }
 .teaser_btn_right{
     width: 176px;
-    height: 40px;
+    height: var(--unnamed-height-40);
     margin: 0 346px 215px 139px;
     background: transparent;
     border: 1px solid #956A53;
@@ -609,14 +595,14 @@ body {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-28)/var(--unnamed-line-spacing-34) var(--unnamed-font-family-proxima-nova);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--oxford-blue-354e57);
-    text-align: center;
+    text-align:  var(--unnamed-text-align-center);
     padding-top: 82px
 }
 .image_tile_subheading{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/ var(--unnamed-line-spacing-24) var(--unnamed-font-family-proxima-nova);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--oxford-blue-354e57);
-    text-align: center;
+    text-align:  var(--unnamed-text-align-center);
 }
 .pt60{
     padding:60px 0 20px;
@@ -625,18 +611,18 @@ body {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-proxima-nova);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--oxford-blue-354e57);
-    text-align: center;
+    text-align:  var(--unnamed-text-align-center);
     margin-top: 22px;
 }
 .image_tile_desp{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px/16px var(--unnamed-font-family-proxima-nova);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--rangitoto-2e2e22);
-    text-align: center;
+    text-align:  var(--unnamed-text-align-center);
     margin-top: 12px;
 }
 .text-align-center {
-    text-align:center;
+    text-align:  var(--unnamed-text-align-center);
 }
 .icon_color{
     color:var(--siler-rust-c6b9b6);
@@ -766,7 +752,7 @@ body {
  .footer_input {
     background: transparent;
     border: 1px solid white;
-    height: 40px;
+    height: var(--unnamed-height-40);
     color: var(----white-ffffff);
  }
  .social_icon {
@@ -794,16 +780,16 @@ body {
         font-family: var(--unnamed-font-family-proxima-nova);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--beige-f7f5e6);
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
         opacity: 1;
         padding: 8px 0px;
     }
     
     .visible-lg {
-        display:none;
+        display:var(--unnamed-float-none);
     }
     .visible-xs {
-        display:block;
+        display:var(--unnamed-display-block);
     }
     
     .banner {
@@ -818,7 +804,7 @@ body {
         background-color: white;
     }
     .visibilty_hidden {
-        display:none;
+        display:var(--unnamed-float-none);
     }
     .teaser_main {
         background: #EEF3F4 0% 0% no-repeat padding-box;
@@ -853,7 +839,7 @@ body {
     }
     .newsletter_desc{
         padding-bottom: 32px;
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
     }
     .Footer_pd{
         padding:0 38px;
@@ -867,16 +853,16 @@ body {
         font-family: var(--unnamed-font-family-proxima-nova);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--beige-f7f5e6);
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
         opacity: 1;
         padding: 8px 0px;
     }
     
     .visible-lg {
-        display:none;
+        display:var(--unnamed-float-none);
     }
     .visible-xs {
-        display:block;
+        display:var(--unnamed-display-block);
     }
     .banner {
         padding: var(--unnamed-padding-28) ;
@@ -946,7 +932,7 @@ body {
     }
     .newsletter_desc{
         padding-bottom: 32px;
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
     }
     .social-contact-section {
         padding-top: var(--unnamed-padding-44);
@@ -965,7 +951,7 @@ body {
     .footer_input {
         background: transparent;
         border: 1px solid white;
-        height: 40px;
+        height: var(--unnamed-height-40);
         color: var(----white-ffffff);
         width: 144px;
     }
@@ -982,14 +968,14 @@ body {
         font-family: var(--unnamed-font-family-proxima-nova);
         letter-spacing: var(--unnamed-character-spacing-0);
         color: var(--beige-f7f5e6);
-        text-align: center;
+        text-align:  var(--unnamed-text-align-center);
         opacity: 1;
         padding: 8px 0px;
     }
     
    
     .visibilty_hidden {
-        display:none;
+        display:var(--unnamed-float-none);
     }
    
 }
